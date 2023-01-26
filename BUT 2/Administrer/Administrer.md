@@ -11,12 +11,19 @@
 
 # Configurer et dépanner le routage dynamique dans un réseau
 
+- OSPF avec FRR 
 # Configurer une politique simple de QoS et les fonctions de base de la sécurité d'un réseau
 
 # Déployer des postes clients et des solutions virtualisées
 
 # Déployer des services réseaux avancés et des systèmes de supervision
+- VPN (Wireguard)
+- FireWall (nftable)
+- DNS (bind9)
 
+Lors de la mise en place d'un réseau d'entreprise multi-sites, j'ai du mettre en place divers services réseaux "basiques" mais également "avancée".
+
+Ne sachant pas qu'elle service est "avancé" ou non j'ai donc fait la recherche pour trancher. On en 
 # Identifier les réseau opérateurs et l'architecture d'internet
 
 # Travailler en équipe 
