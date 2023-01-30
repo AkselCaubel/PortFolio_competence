@@ -8,14 +8,17 @@
 
 <h1 class=headerTemplate style="text-align:center;">Administer</h1>
 
+# Disclamer, Dans le cadre de l'exercice du portfolio, seul les pistes sont notées dans Administrer/ programmer / connecté mais si vous voulais voir des rapport pour représentatif, Etendre et plus particulièrement Exploité ont été travaillé / approfondi.
 
 # Configurer et dépanner le routage dynamique dans un réseau
 
-- OSPF avec FRR 
+- OSPF avec FRR | Exemple de dépannage avec limite dans le cadre de la SAE3I03 avec le multicast qui ne passe pas dans WireGuard
 # Configurer une politique simple de QoS et les fonctions de base de la sécurité d'un réseau
 
+- Parler de la mise en place de VLAN et se renseigner pour mettre en place un faux réseau avec un test de QOS (faire des demandes de matériel)
 # Déployer des postes clients et des solutions virtualisées
 
+- Se baser sur la première année pour les postes clients car pas refait depuis | Solution virtualisés, ce basé sur la SAE 21 
 # Déployer des services réseaux avancés et des systèmes de supervision
 - VPN (Wireguard)
 - FireWall (nftable)
@@ -23,8 +26,10 @@
 
 Lors de la mise en place d'un réseau d'entreprise multi-sites, j'ai du mettre en place divers services réseaux "basiques" mais également "avancée".
 
-Ne sachant pas qu'elle service est "avancé" ou non j'ai donc fait la recherche pour trancher. On en 
+Ne sachant pas qu'elle service est "avancé" ou non j'ai donc fait la recherche pour trancher.
 # Identifier les réseau opérateurs et l'architecture d'internet
+
+- Non fait a ce jour
 
 # Travailler en équipe 
 
