@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 
 ### Aksel
 
@@ -8,17 +8,50 @@
 
 <h1 class=headerTemplate style="text-align:center;">Administer</h1>
 
-# Disclamer, Dans le cadre de l'exercice du portfolio, seul les pistes sont notées dans Administrer/ programmer / connecté mais si vous voulais voir des rapport pour représentatif, Etendre et plus particulièrement Exploité ont été travaillé / approfondi.
+# Disclamer, Dans le cadre de l'exercice du portfolio, seul les pistes sont notées dans Administrer/ programmer / connecté mais si vous voulais voir des rapport plus représentatif, Etendre et plus particulièrement Exploité ont été travaillé / approfondi. De plus n'étant qu'un brouille pour la mise en forme, l'orthographe n'a pas était retravaillé.
 
 # Configurer et dépanner le routage dynamique dans un réseau
 
 - OSPF avec FRR | Exemple de dépannage avec limite dans le cadre de la SAE3I03 avec le multicast qui ne passe pas dans WireGuard
 # Configurer une politique simple de QoS et les fonctions de base de la sécurité d'un réseau
 
-- Parler de la mise en place de VLAN et se renseigner pour mettre en place un faux réseau avec un test de QOS (faire des demandes de matériel)
+- Parler de la mise en place de VLAN et se renseigner pour mettre en place un faux réseau avec un test de QOS avec débit varier (faire des demandes de matériel)
+
+Lors de la mise en place d'un réseau d'entreprise contant 4 services différents, j'ai pu mettre en place un réseau VLANisé : 
+<img src="..\!SAE\SAE-3I03\image\schéma_physique.png">
+
+
+Dans ce dernier je n'ai pas eu a géré la Qualité de Service mais cela devrais être vu prochainement.
+
+En revanche j'ai pu me perfectionner dans la mise en place de la sécurité d'un réseau par son FireWall.
+
+Dans ma solution mise en place j'utilise un ordinateur linux comme routeur avec FRR pour la mise en place du protocole de routage dynamique OSPF.
+
+De se fait je me suis penché sur les différents types de FireWall que je pouvais faire et m'en est resorti deux noms : 
+ipTables qui est très utilisé et également très simple syntaxiquement parlant mais il n'est plus mit à jour sans parler qu'il y a beaucoup d'autre extension à installer pour l'utiliser dans toutes les circonstances. 
+
+Le deuxième nom et qui est celui que j'ai retenu est NFTables.
+Plus compliquer syntaxiquement parlant, NFTables est le prédécesseur de ipTables regroupent plusieurs outils que l'on installer autour de ce dernier. Après avoir suivis des cours en ligne pour comprendre son fonctionnement et me perfectionner sur le FireWall que j'avais vu de manière très succin durant ma permière année, j'ai pu mieux comprendre le comportement d'un routeur : 
+
+Il existe 5 différents points de "réflexion" dans le routage:
+
+- le Pre-routing qui va agir avant même de diriger le paquet.
+- Le Input qui va servir si le paquet doit entrer dans mon interface.
+- Le Output s'il sort de mon interface ( de manière général, si je sors c'est que je veux ).
+- Le Forward qui permet de mettre des règles sur les paquets que je dois redirigés.
+- Le Post-routing qui va être la modification du paquet après que l'on est regardées toute les règles précédentes.
+
+Selon un cahier des charges données j'ai donc pu établir toutes les règles à faire sur chacun des VLANs ainsi que sur les communications extérieurs. ***re-faire l'illustations des différents accès***
+
+<img src="..\!SAE\SAE-3I03\image\nftables.png">
+
+Dans un but de ne pas avoir de faille non pensé, il est important de faire un mur impermeable en bloquant tous le traffic et ajouter des troues pour le traffic que nous avons besoin.
+
+A savoir que les règles mises en place ne sont pas permanant, il est necessaire de faire une crontab qui au démarrage de l'ordinateur (routeur) exécute le script.sh que vous vouyez si dessus.
+
 # Déployer des postes clients et des solutions virtualisées
 
-- Se baser sur la première année pour les postes clients car pas refait depuis | Solution virtualisés, ce basé sur la SAE 21 
+- Se baser sur la première année pour les postes clients car pas refait depuis | Solution virtualisés, se basé sur la SAE 21 
 # Déployer des services réseaux avancés et des systèmes de supervision
 - VPN (Wireguard)
 - FireWall (nftable)

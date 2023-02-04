@@ -72,4 +72,4 @@ Bien évidement l'adresse de mon Network server est renseigné dans le champs (S
 
 Durant la pose d'un réseau LoRaWAN dans un poulailler j'ai également pu utiliser une passerelle Multi-Tech aillant des champs supplémentaires à renseigner :
 
-Le Duty Circle qui permet de définir chaque combien de temps souhaitons nous que l'on puisse envoyer des informations à nos capteurs (grâce aux normes défini pour l'utilisation LoRa)
+Le Duty Circle qui permet de définir chaque combien de temps souhaitons nous que l'on puisse envoyer des informations à nos ;capteurs (grâce aux normes défini pour l'utilisation LoRa)

@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
+
 ### Aksel
 
 ### CAUBEL
@@ -13,7 +14,7 @@
 
 # Mettre en place un accès distant sécurisé
 
-VPN avec accès dans un VLAN distant et des ACL 
+VPN avec accès dans un VLAN distant et des ACL mit sur le routeur de manière a accepter uniquement ce que je veux dans entre mes interfaces avec une politique par défaut de drop all.
 # Mettre en place une connexion multi-site via un réseau opérateur
 
 Non fait à ce jour
@@ -23,4 +24,4 @@ Non fait à ce jour
 Non fait à ce jour
 # Organiser un projet pour répondre au cahier des charges
 
-- Se base sur le projet VNA et sur la SAE3I04 
+- Se base sur le projet VNA(apprentissage) et sur la SAE3I04 
